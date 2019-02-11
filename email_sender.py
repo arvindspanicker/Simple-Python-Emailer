@@ -134,11 +134,10 @@ class PersonalEmailSender(object):
                             print('Sending mail to {} from {}'.format(row['EmailAddress'],self.sender_email_id))
                             self.logger.info('Sending mail to {} from {}'.format(row['EmailAddress'],self.sender_email_id))
                             self.set_up_email_message()
-                            
-                            # self.msg['To'] = row['EmailAddress']
-                            # random_sleep_time = random.randint(1,self.sleep_time)
-                            # time.sleep(random_sleep_time)
-                            # self.send_mail()
+                            self.msg['To'] = row['EmailAddress']
+                            random_sleep_time = random.randint(1,self.sleep_time)
+                            time.sleep(random_sleep_time)
+                            self.send_mail()
                             self.insert_database_record(index,row['EmailAddress'],excel_file_name)
         except Exception as e:
             self.logger.exception('Error inside read_from_excel. ERROR : {}'.format(str(e)))
