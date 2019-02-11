@@ -1,0 +1,18 @@
+{
+    "Excel_Excel_List_Location" : "Test_Excel_Sheets/",
+    "Log_Location" : "",
+    "Sender_Email_ID": [],
+    "Sender_Email_Password": [],
+    "SMTP_Port" : 465,
+    "SMTP_Service": "smtp.gmail.com",
+    "Email_Content_File_Location": "EmailContent/email_content.txt",
+    "Email_Topic": "TestScript-To-Automate-8th CSI-InApp National Student Project Awards 2019",
+    "Email_Attachments_Location": ["EmailContent/Abstract-CSI-InApp-Awards-2019.docx"],
+    "Database_Location": "Send_Email_List.sql",
+    "Delay_Limit": 5,
+    "Daily_Email_Limit": 480,
+    "SIZE": 52428800,
+    "BACKUPCOUNT":10,
+    "LOGGERNAME":"Rotating Log",
+    "MODE":"DEBUG"
+}
